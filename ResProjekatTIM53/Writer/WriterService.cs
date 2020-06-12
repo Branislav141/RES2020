@@ -15,9 +15,9 @@ namespace Writer
             System.Diagnostics.Process.Start("Writer.exe");
         }
 
-        public string SlanjePodataka(string a)
+        public void SlanjePodataka(string a)
         {
-            return a;
+            Console.WriteLine(a);
         }
     }
 }

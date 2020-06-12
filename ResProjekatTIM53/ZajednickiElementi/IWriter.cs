@@ -11,7 +11,7 @@ namespace ZajednickiElementi
    public interface IWriter
     {
         [OperationContract]
-        string SlanjePodataka(string a);
+        void SlanjePodataka(string a);
 
         [OperationContract]
         void OtvaranjeNovogWritera();

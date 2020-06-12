@@ -35,6 +35,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -48,6 +50,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Writer\Writer.csproj">
+      <Project>{8CEDF051-4884-473A-9059-306A23EC9A50}</Project>
+      <Name>Writer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZajednickiElementi\ZajednickiElementi.csproj">
+      <Project>{D35D01E0-9719-44A7-9071-EACD6EBFC7C4}</Project>
+      <Name>ZajednickiElementi</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
